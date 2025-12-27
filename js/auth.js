@@ -1,10 +1,10 @@
 function login() {
-  // TEMP login (later replaced with real auth)
+  // TEMP ROLE SIMULATION (replace with real auth)
   const user = {
-    id: "demo-id",
-    role: "shepherd"
+    id: "uuid",
+    role: "master_admin" // change to test roles
   };
 
   localStorage.setItem("user", JSON.stringify(user));
-  window.location.href = "dashboard.html";
+  location.href = "dashboard.html";
 }
