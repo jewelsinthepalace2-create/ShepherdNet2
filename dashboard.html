@@ -6,36 +6,14 @@
 </head>
 <body>
 
-<div class="sidebar">
-  <a href="lists/members.html">Members</a>
-
-  <a href="lists/shepherds.html"
-     class="role-pastor role-chapel_leader role-master_admin">
-     Shepherds
-  </a>
-
-  <a href="lists/pastors.html"
-     class="role-chapel_leader role-master_admin">
-     Pastors
-  </a>
-
-  <a href="lists/chapels.html"
-     class="role-master_admin">
-     Chapels
-  </a>
+<div class="layout">
+  <aside id="sidebar"></aside>
+  <main class="content">
+    <h1>Dashboard</h1>
+    <p>Select a section</p>
+  </main>
 </div>
 
-<script src="js/auth.js"></script>
-<script>
-  document.querySelectorAll("[class^='role-']").forEach(el => {
-    const roles = el.className.replace("role-", "").split(" ");
-    if (!roles.includes(user.role)) el.remove();
-  });
-</script>
-
-<div class="content">
-  <h1>Welcome to ShepherdNet</h1>
-</div>
-
+<script src="js/sidebar.js"></script>
 </body>
 </html>
