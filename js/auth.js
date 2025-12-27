@@ -1,4 +1,5 @@
-function login() {
+function login() 
+{
   // TEMP ROLE SIMULATION (replace with real auth)
   const user = {
     id: "uuid",
