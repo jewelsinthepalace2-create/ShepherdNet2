@@ -1,0 +1,27 @@
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+aside {
+  width: 240px;
+  background: var(--primary);
+  color: white;
+  padding: 20px;
+}
+
+aside a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+}
