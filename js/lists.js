@@ -1,4 +1,4 @@
-fetch(API_URL + "/members")
+fetch (API_URL + "/members")
   .then(res => res.json())
   .then(data => {
     const list = document.getElementById("list");
